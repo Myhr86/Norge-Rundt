@@ -72,6 +72,18 @@ hr {
   padding-bottom: 80px;
 }
 
+#myButton {
+  border: none;
+  width: 100px;
+  height: 30px;
+  background: lightblue;
+}
+
+#myButton:hover {
+  cursor: pointer;
+  box-shadow: 2px 4px #222222;
+}
+
 @media screen and (max-width: 480px) {
   body {
     background: #3b597f;
@@ -81,7 +93,7 @@ hr {
     max-width: 480px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 33%;
     grid-template-rows: auto;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
@@ -139,5 +151,19 @@ hr {
 
   .yearsA {
     padding-bottom: 50px;
+  }
+
+  #myButton {
+    border: none;
+    width: 100px;
+    height: 30px;
+    background: lightblue;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+  }
+
+  #myButton:hover {
+    cursor: pointer;
+    box-shadow: 2px 4px #222222;
   }
 }

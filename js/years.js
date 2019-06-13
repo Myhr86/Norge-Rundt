@@ -64,5 +64,8 @@ function createSpecific(result) {
     }
 
   }
+}
 
+function goBack() {
+  window.history.back();
 }
