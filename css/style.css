@@ -92,7 +92,7 @@ hr {
     max-width: 480px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 33%;
+    grid-template-columns: 99.9%;
     grid-template-rows: auto;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
