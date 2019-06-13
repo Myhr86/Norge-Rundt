@@ -14,11 +14,10 @@ body {
 }
 
 #cardDetails {
-  padding-left: 60%;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 30% 30% 30%;
   grid-template-rows: auto;
   grid-row-gap: 20px;
   grid-column-gap: 60%;
@@ -104,7 +103,7 @@ hr {
     max-width: 480px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 200%;
     grid-template-rows: auto;
     grid-row-gap: 0;
     grid-column-gap: 0%;
@@ -140,6 +139,7 @@ hr {
   hr {
     margin-bottom: 10%;
     display: block;
+    width: 92%;
   }
 
   .frontpageP {
