@@ -24,6 +24,14 @@ body {
   background: white;
 }
 
+.search-container p {
+  text-align: center;
+}
+
+.search-container a {
+  margin-left: 9%;
+}
+
 #cardDetails {
   max-width: 1200px;
   margin: 0 auto;
@@ -69,6 +77,12 @@ h3 {
 
 hr {
   display: none;
+}
+
+.searchHr {
+  margin-bottom: 10%;
+  display: block;
+  width: 92%;
 }
 
 .frontpageP {

@@ -56,27 +56,27 @@ function filterResult(result2) {
         myContainer.style.display = "none";
 
         var outputContainer = document.querySelector(".search-container");
-        var p = document.createElement("p");
         var a = document.createElement("a");
         var tittelP = document.createElement("p");
         var aarP = document.createElement("p");
         var urlP = document.createElement("p");
+        var hr = document.createElement("hr");
         var tittel = result2[i].tittel;
         var aar = result2[i].aar;
         var url = result2[i].video_url;
 
-        p.append(results);
-        p.style.font_weight = "bold";
         tittelP.append(tittel);
         aarP.append(aar);
         urlP.append(url);
-        a. href = url;
-        a. classList = ("yearsA");
         a.append(urlP);
-        outputContainer.append(p);
+        a. href = url;
+        a. style.width = "80%";
+        a. classList = ("yearsA");
+        hr. classList = ("searchHr");
         outputContainer.append(tittelP);
         outputContainer.append(aarP);
         outputContainer.append(a);
+        outputContainer.append(hr);
 
       } else {
 
