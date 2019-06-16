@@ -13,6 +13,17 @@ body {
   background: white;
 }
 
+.search-container {
+  max-width: 480px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 99.9%;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  background: white;
+}
+
 #cardDetails {
   max-width: 1200px;
   margin: 0 auto;
@@ -72,6 +83,8 @@ hr {
 }
 
 #myButton {
+  position: sticky;
+  top: 0;
   border: none;
   width: 100px;
   height: 30px;
@@ -89,6 +102,17 @@ hr {
   }
 
   .container {
+    max-width: 480px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 99.9%;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    background: white;
+  }
+
+  .search-container {
     max-width: 480px;
     margin: 0 auto;
     display: grid;
@@ -154,6 +178,8 @@ hr {
   }
 
   #myButton {
+    position: sticky;
+    top: 0;
     border: none;
     width: 100px;
     height: 30px;

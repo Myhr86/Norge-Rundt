@@ -29,3 +29,54 @@ function createCards(result) {
     myContainer.append(a);
   }
 }
+
+
+function searchResult() {
+
+  fetch("csvjson.json")
+    .then(result2 => result2.json())
+    .then((res2) => {
+      filterResult(res2);
+      })
+    .catch(err => console.log(err))
+}
+
+function filterResult(result2) {
+
+  var myInput = document.getElementById("myInput");
+  var filter = myInput.value.toUpperCase();
+
+
+  for (var i = 0; i < result2.length; i++) {
+      var results = result2[i].kommune.toUpperCase();
+
+      if (filter === results) {
+        //console.log(result2[i].aar);
+        var myContainer = document.querySelector('.container');
+        myContainer.style.display = "none";
+
+        var outputContainer = document.querySelector(".search-container");
+        var p = document.createElement("p");
+        var a = document.createElement("a");
+        var tittelP = document.createElement("p");
+        var aarP = document.createElement("p");
+        var urlP = document.createElement("p");
+        var tittel = result2[i].tittel;
+        var aar = result2[i].aar;
+        var url = result2[i].video_url;
+        p.append(results);
+        tittelP.append(tittel);
+        aarP.append(aar);
+        urlP.append(url);
+        a. href = url;
+        a.append(urlP);
+        outputContainer.append(p);
+        outputContainer.append(tittelP);
+        outputContainer.append(aarP);
+        outputContainer.append(a);
+
+      } else {
+
+      }
+  }
+}
