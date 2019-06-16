@@ -10,12 +10,14 @@
   <body>
     <header>
       <img id="headerImg" src="images/norgerundt.jpg" alt="">
-      <input id="myInput" type="text" name="" value="" placeholder="Søk etter kommune..">
-      <button type="button" name="button" onclick="searchResult()">Søk</button>
+
       <h1>Norge Rundt Arkiv</h1>
     </header>
     <section>
       <h3>Arkiv sortert etter år:</h3>
+      <input id="myInput" type="text" name="" value="" placeholder="Søk etter kommune..">
+      <button id="searchButton" type="button" name="button" onclick="searchResult()">Søk</button>
+      <div class="noResult"></div>
       <div class="container"></div>
       <div class="search-container">
 

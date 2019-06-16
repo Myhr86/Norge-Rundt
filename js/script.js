@@ -79,7 +79,7 @@ function filterResult(result2) {
         outputContainer.append(hr);
 
       } else {
-
+        
       }
   }
 }
