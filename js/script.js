@@ -64,11 +64,14 @@ function filterResult(result2) {
         var tittel = result2[i].tittel;
         var aar = result2[i].aar;
         var url = result2[i].video_url;
+
         p.append(results);
+        p.style.font_weight = "bold";
         tittelP.append(tittel);
         aarP.append(aar);
         urlP.append(url);
         a. href = url;
+        a. classList = ("yearsA");
         a.append(urlP);
         outputContainer.append(p);
         outputContainer.append(tittelP);
