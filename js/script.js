@@ -45,7 +45,8 @@ function filterResult(result2) {
 
   var myInput = document.getElementById("myInput");
   var filter = myInput.value.toUpperCase();
-
+  var outputContainer = document.querySelector(".search-container");
+  outputContainer.innerHTML=""
 
   for (var i = 0; i < result2.length; i++) {
       var results = result2[i].kommune.toUpperCase();
@@ -77,9 +78,6 @@ function filterResult(result2) {
         outputContainer.append(aarP);
         outputContainer.append(a);
         outputContainer.append(hr);
-
-      } else {
-        
       }
   }
 }
