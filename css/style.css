@@ -105,7 +105,7 @@ hr {
 
 #searchButton {
   margin-left: 45.5%;
-  width: 173px;
+  width: 153px;
   height: 30px;
   cursor: pointer;
   margin-bottom: 2%;
@@ -124,6 +124,13 @@ hr {
 #myButton:hover {
   cursor: pointer;
   box-shadow: 2px 4px #222222;
+}
+
+#refresh {
+  margin-left: 18%;
+  width: 80px;
+  height: 22px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 480px) {
@@ -216,7 +223,7 @@ hr {
 
   #searchButton {
     margin-left: 0%;
-    width: 43.4%;
+    width: 153px;
     height: 40px;
     cursor: pointer;
     font-weight: bold;
@@ -236,5 +243,10 @@ hr {
   #myButton:hover {
     cursor: pointer;
     box-shadow: 2px 4px #222222;
+  }
+
+  #refresh {
+    font-weight: bold;
+    margin-left: 0;
   }
 }

@@ -78,6 +78,11 @@ function filterResult(result2) {
         outputContainer.append(aarP);
         outputContainer.append(a);
         outputContainer.append(hr);
+      } else{
       }
   }
+}
+
+function refresh() {
+  location.reload();
 }
