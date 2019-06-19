@@ -52,6 +52,10 @@ body {
   background: lightgrey;
 }
 
+.box:hover {
+  background: lightyellow;
+}
+
 a {
   text-decoration: none;
   text-align: center;
@@ -74,6 +78,11 @@ h3 {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+span {
+  font-family: 'Special Elite', cursive;
+  font-size: 0.8em;
 }
 
 hr {
@@ -110,6 +119,13 @@ hr {
   cursor: pointer;
   margin-bottom: 2%;
   font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#searchButton:hover {
+  background: #a52a2a;
 }
 
 #myButton {
@@ -131,6 +147,42 @@ hr {
   width: 80px;
   height: 22px;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border: 0;
+  border-radius: 5px;
+}
+
+#refresh:hover {
+  cursor: pointer;
+  background: #a52a2a;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15.5% 15.5% 15.5% 15.5% 15.5%;
+    grid-template-rows: auto;
+    grid-row-gap: 25px;
+    grid-column-gap: 5.62%;
+    background: white;
+  }
+  #myInput {
+    display: block;
+    margin: 0 auto;
+    height: 24px;
+  }
+
+  #searchButton {
+    display: block;
+    margin: 0 auto;
+    width: 153px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 2%;
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 480px) {
